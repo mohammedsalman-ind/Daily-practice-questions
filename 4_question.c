@@ -1,19 +1,29 @@
 #include <stdio.h>
 int main() {
-    int m, n , o;
-    printf("enter number 1: ");
-    scanf("%d" , &m);
-    printf("enter number 2: ");
-    scanf("%d", &n);
-    printf("enter number 3: ");
-    scanf("%d", &o);
-    if(m>n &&m>0){
-        printf("number 1 is largest");
-    }
-    else if(n>m &&n>o){
-        printf("number 2 is largest");
-    }
-    else{
-        printf("number 3 is largest");
+    int num;
+    printf("enter number 1-7: ");
+    scanf("%d", &num);
+    switch(num) {
+        case 1: 
+        printf("monday"); 
+        break;
+        case 2: 
+        printf("tuesday"); 
+        break;
+        case 3: 
+        printf("wednesday"); 
+        break;
+        case 4: 
+        printf("thursday"); 
+        break;
+        case 5: 
+        printf("friday");
+         break;
+        case 6: 
+        printf("saturday"); 
+        break;
+        case 7: 
+        printf("sunday"); 
+        break;
     }
 }

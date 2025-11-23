@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main() {
-    int m, n;
-    printf("enter number 1: ");
-    scanf("%d" , &m);
-    printf("enter number 2: ");
-    scanf("%d", &n);
-    if(m>n)
-        printf("number 1 is largest");
+    char ch_element;
+    printf("enter input: ");
+    scanf("%c", &ch_element);
+    if((ch_element>=65&&ch_element<=90)||(ch_element>=97&&ch_element<=122))
+        printf("Your input is alpha bet");
+    else if(ch_element>=48&&ch_element<=57)
+        printf("Your input is digit");
     else
-        printf("number 2 is largest");
+        printf("Your input is special character");
 }

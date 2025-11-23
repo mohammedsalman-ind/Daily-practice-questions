@@ -1,12 +1,11 @@
 #include <stdio.h>
-int main (){
-    int num;
-    printf("enter number: ");
-    scanf("%d", &num);
-    if(num%2==0){
-        printf("Its an even number");
-    }
-    else{
-        printf("Its an odd number");
-    }
+int main() {
+    int age;
+    printf("enter your age:");
+    scanf("%d", &age);
+    if(age>=18)
+        printf("eligible to vote");
+    else
+        printf("not eligible");
+
 }
