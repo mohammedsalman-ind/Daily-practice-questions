@@ -1,15 +1,11 @@
 #include <stdio.h>
-int main (){
-    int num;
-    printf("enter number: ");
-    scanf("%d", &num);
-    if(num==0){
-        printf("Number is zero");
-    }
-    else if(num<0){
-        printf("Number is negative");
-    }
-    else{
-        printf("Num is positive");
-    }
+int main() {
+    int a = 1, b = 0;
+
+    printf("a AND b = %d\n", a && b);
+    printf("a OR b = %d\n", a || b);
+    printf("NOT a = %d\n", !a);
+    printf("NOTb = %d\n", !b);
+
+    return 0;
 }
